@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio de Fonoaudiología | Lic. Ruiz Miranda Romina</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon (Icono de la pestaña) -->
+    <link rel="icon" href="https://placehold.co/32x32/fccff1/666666?text=RF" type="image/png">
+    <!-- Hoja de Estilos Personalizada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-700">
+    <!-- =========== HEADER / NAVBAR =========== -->
+    <header id="header" class="bg-custom-gray-dark text-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo/Nombre -->
+            <a href="#inicio" class="text-xl md:text-2xl font-bold hover:text-custom-pink transition-colors">
+                Lic. Romina Ruiz
+            </a>
+            <!-- Menú para Escritorio -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="nav-link hover:text-custom-pink transition-colors">Inicio</a>
+                <a href="#sobre-mi" class="nav-link hover:text-custom-pink transition-colors">Sobre Mí</a>
+                <a href="#servicios" class="nav-link hover:text-custom-pink transition-colors">Servicios</a>
+                <a href="#contacto" class="nav-link hover:text-custom-pink transition-colors">Contacto</a>
+            </div>
+            <!-- Botón de Menú Hamburguesa para Móvil -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú para Móvil (Oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-custom-gray-dark">
+            <a href="#inicio" class="block text-center py-3 px-4 text-sm hover:bg-gray-700 mobile-link">Inicio</a>
+            <a href="#sobre-mi" class="block text-center py-3 px-4 text-sm hover:bg-gray-700 mobile-link">Sobre Mí</a>
+            <a href="#servicios" class="block text-center py-3 px-4 text-sm hover:bg-gray-700 mobile-link">Servicios</a>
+            <a href="#contacto" class="block text-center py-3 px-4 text-sm hover:bg-gray-700 mobile-link">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <!-- =========== SECCIÓN INICIO / HERO =========== -->
+        <section id="inicio" class="bg-custom-pink text-custom-gray-dark py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Consultorio de Fonoaudiología Profesional</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto">Ayudando a mejorar la comunicación y la calidad de vida de niños y adultos.</p>
+                <a href="#servicios" class="mt-8 inline-block bg-custom-gray-dark text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition-transform transform hover:scale-105 shadow-lg">
+                    Conoce mis Servicios
+                </a>
+            </div>
+        </section>
+        <!-- =========== SECCIÓN SOBRE MÍ =========== -->
+        <section id="sobre-mi" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Conoce a tu Fonoaudióloga</h2>
+                    <div class="w-24 h-1 bg-custom-pink mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center gap-12">
+                    <!-- Foto de Perfil -->
+                    <div>
+                        <img 
+                            src="foto-perfil.jpg" 
+                            alt="Lic. Ruiz Miranda Romina"
+                            class="w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-xl object-cover border-4 border-custom-pink ring-4 ring-white transition-transform duration-300 hover:scale-105"
+                            loading="lazy"
+                        >
+                        <div class="mt-4">
+                            <span class="block text-lg font-semibold text-gray-800">Lic. Ruiz Miranda Romina</span>
+                            <span class="block text-sm text-custom-gray-dark">Fonoaudióloga Profesional</span>
+                        </div>
+                    </div>
+                    <!-- Texto de Sobre Mí -->
+                    <div class="max-w-2xl">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mi Historia y Enfoque</h3>
+                        <p class="mb-4">
+                            ¡Hola! Soy la Lic. Ruiz Miranda Romina y mi pasión es ayudar a las personas a superar las barreras de la comunicación. Desde que comencé mi carrera, me he dedicado a ofrecer terapias personalizadas y basadas en la evidencia para niños y adultos.
+                        </p>
+                        <p>
+                            Mi enfoque se basa en la empatía y la confianza, creando un ambiente seguro y motivador donde cada paciente puede alcanzar su máximo potencial. Creo firmemente en el trabajo colaborativo con las familias para lograr resultados duraderos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== SECCIÓN SERVICIOS =========== -->
+        <section id="servicios" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Mis Áreas de Especialización</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Ofrezco terapia personalizada, abordando una variedad de desafíos con un enfoque cercano y profesional.</p>
+                    <div class="w-24 h-1 bg-custom-pink mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tarjeta 1: Niños -->
+                    <div class="bg-custom-card rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Terapia para Niños</h3>
+                        <p class="mb-4">Apoyo para el desarrollo de la comunicación en la infancia, creando un ambiente de juego y confianza.</p>
+                        <ul class="space-y-2 text-left">
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Trastornos de los Sonidos del Habla (Dislalia)</li>
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Retraso del Lenguaje</li>
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Trastorno Específico del Lenguaje (TEL)</li>
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Dificultades en la lectoescritura</li>
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Acompañamiento en la tramitación del CUD</li>
+                        </ul>
+                    </div>
+                    <!-- Tarjeta 2: Adultos -->
+                    <div class="bg-custom-card rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Terapia para Adultos</h3>
+                        <p class="mb-4">Rehabilitación y tratamiento para adultos que buscan mejorar su comunicación, habla o deglución.</p>
+                        <ul class="space-y-2 text-left">
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Trastornos de la voz (Disfonía)</li>
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Dificultades del habla (Disartria)</li>
+                            <li class="flex items-start"><span class="accent-custom-pink font-bold mr-2">✓</span>Mejora de la fluidez (Tartamudez)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tarjeta 3: Evaluaciones -->
+                    <div class="bg-custom-card rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Evaluaciones y Diagnósticos</h3>
+                        <p>Realizo evaluaciones completas para identificar con precisión las áreas a trabajar y diseñar un plan de tratamiento efectivo y a la medida de cada paciente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== SECCIÓN CONTACTO =========== -->
+        <section id="contacto" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Hablemos. Estoy aquí para ayudarte.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Completa el formulario o utiliza los datos de contacto directos.</p>
+                    <div class="w-24 h-1 bg-custom-pink mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <!-- Formulario de Contacto -->
+                    <div class="lg:w-1/2 bg-gray-50 p-8 rounded-lg shadow-md">
+                        <form action="https://formspree.io/f/xgvyojkj" method="POST">
+                            <div class="mb-5">
+                                <label for="nombre" class="block mb-2 font-medium text-gray-700">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" class="block w-full p-3 rounded-md border border-gray-300 focus:ring-custom-pink focus:border-custom-pink" required>
+                            </div>
+                            <div class="mb-5">
+                                <label for="email" class="block mb-2 font-medium text-gray-700">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" class="block w-full p-3 rounded-md border border-gray-300 focus:ring-custom-pink focus:border-custom-pink" required>
+                            </div>
+                            <div class="mb-5">
+                                <label for="telefono" class="block mb-2 font-medium text-gray-700">Teléfono (Opcional)</label>
+                                <input type="tel" id="telefono" name="telefono" class="block w-full p-3 rounded-md border border-gray-300 focus:ring-custom-pink focus:border-custom-pink">
+                            </div>
+                            <div class="mb-5">
+                                <label for="mensaje" class="block mb-2 font-medium text-gray-700">¿Cómo puedo ayudarte?</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" class="block w-full p-3 rounded-md border border-gray-300 focus:ring-custom-pink focus:border-custom-pink" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-custom-gray-dark text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors shadow-md">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Información y Mapa -->
+                    <div class="lg:w-1/2">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md mb-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Información Directa</h3>
+                            <p class="mb-2"><strong>Email:</strong> <a href="mailto:romi_ruiz88@hotmail.com" class="text-blue-600 hover:underline">romi_ruiz88@hotmail.com</a></p>
+                            <p class="mb-2"><strong>Teléfono:</strong> <a href="tel:+5492964493875" class="text-blue-600 hover:underline">+54 9 2964 493875</a></p>
+                            <p><strong>Dirección:</strong> Jauretche 836, Río Grande, Tierra del Fuego</p>
+                        </div>
+                        <div class="rounded-lg shadow-md overflow-hidden">
+                                <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.132977936265!2d-67.68427012520202!3d-53.79781822363255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b17a2e728a9a3%3A0x2e73dde4e94be0b3!2sCentro%20Integral%20de%20Salud%20AGP!5e0!3m2!1ses-419!2sar!4v1749235669626!5m2!1ses-419!2sar" 
+                                width="100%" 
+                                height="350" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =========== FOOTER =========== -->
+    <footer class="bg-custom-gray-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 | Lic. Ruiz Miranda Romina - Consultorio de Fonoaudiología.</p>
+            <p class="text-sm text-gray-400 mt-2">Todos los derechos reservados. Sitio creado por Pablo Maldonado.</p>
+        </div>
+    </footer>
+    
+    <!-- Script Personalizado -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>

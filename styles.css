@@ -1,0 +1,39 @@
+/* Usamos la fuente Poppins para todo el sitio */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colores personalizados basados en tu paleta original */
+.bg-custom-pink { 
+    background-color: #fccff1; 
+}
+
+.bg-custom-gray-dark { 
+    background-color: #747474; 
+}
+
+.bg-custom-gray-light { 
+    background-color: #d6d8d8; 
+}
+
+.bg-custom-card { 
+    background-color: #ddd1dc; 
+}
+
+.text-custom-gray-dark { 
+    color: #666666; 
+}
+
+.border-custom-pink { 
+    border-color: #fccff1; 
+}
+
+.accent-custom-pink { 
+    color: #d63384; /* Un rosa más vibrante para acentos */
+}
+
+/* Estilo para la sección activa en el menú */
+.nav-link.active {
+    color: #fccff1;
+    font-weight: 600;
+}
